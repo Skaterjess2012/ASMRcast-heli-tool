@@ -1,0 +1,63 @@
+@import 'var';
+@scale: 65;
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+	.top {
+		display: flex;
+		background: blue;
+		width: 100%;
+		.stage {
+			margin: 1em;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: calc(1920px * (@scale/100));
+			min-width: calc(1920px * (@scale/100));
+			max-width: calc(1080px * (@scale/100));
+			height: calc(1080px * (@scale/100));
+			min-height: calc(1080px * (@scale/100));
+			max-height: calc(1080px * (@scale/100));
+			background: @gg-green;
+			#drg-con {
+				background: red url("https://image.freepik.com/free-icon/helicopter-silhouette_318-43041.jpg") center;
+				background-size: cover;
+				position: absolute;
+				width: 100px;
+				height: 100px;
+			}
+		}
+		#size-bar {
+			@width: 1em;
+			width: @width;
+			margin: 1em 0 0 1em;
+			box-sizing: border-box;
+			height: calc(1080px * (@scale/100));
+			left: calc(1920px * (@scale/100));
+			cursor: col-resize;
+			position: absolute;
+			z-index: 1;
+			transition-duration: 0.5s;
+			&:hover {
+				background: purple;
+			}
+		}
+		.iframe-con {
+			background: purple;
+			width: 50%;
+			iframe {
+				width: 100%;
+				height: 50%;
+				border: none;
+			}
+		}
+	}
+	.bottom {
+		background: red;
+		width: 100%;
+		height: 100%;
+	}
+}
