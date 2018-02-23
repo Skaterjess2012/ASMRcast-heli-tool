@@ -22,12 +22,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(1248px);
-  min-width: calc(1248px);
-  max-width: calc(702px);
-  height: calc(702px);
-  min-height: calc(702px);
-  max-height: calc(702px);
+  width: calc(1920px * (65/100));
+  min-width: calc(1920px * (65/100));
+  max-width: calc(1080px * (65/100));
+  height: calc(1080px * (65/100));
+  min-height: calc(1080px * (65/100));
+  max-height: calc(1080px * (65/100));
   background: #00FF16;
 }
 .container .top .stage #drg-con {
@@ -41,8 +41,8 @@ body {
   width: 1em;
   margin: 1em 0 0 1em;
   box-sizing: border-box;
-  height: calc(702px);
-  left: calc(1248px);
+  height: calc(1080px * (65/100));
+  left: calc(1920px * (65/100));
   cursor: col-resize;
   position: absolute;
   z-index: 1;
