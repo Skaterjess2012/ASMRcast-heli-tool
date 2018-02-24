@@ -6,27 +6,26 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="top">
-				<div class="stage">
-					<div id="drg-con"></div>
+			<div class="left">
+				<div class="drg-area">
+					<img src="resources/helicopter.svg">
 				</div>
+				<div class="tools">
+					<div class="input-con">
+						<input class="input" type="input" placeholder="Image/vector URL">
+						<div class="bar"></div>
+					</div>
+					<a href="">?</a>
+				</div>
+			</div>
+			<div class="right">
 				<div class="iframe-con">
-					<iframe src="https://player.twitch.tv/?channel=ASMRCast"
-						frameborder="0"
-						allowfullscreen="true" 
-						scrolling="no" 
-						height="378" 
-						width="620">
+					<iframe id="stream" src="https://player.twitch.tv/?channel=ASMRCast" allowfullscreen="true" scrolling="no" frameborder="0">
 					</iframe>
-					<iframe src="https://www.twitch.tv/ASMRCast/chat?popout=" 
-						frameborder="0"
-						scrolling="no"
-						height="500"
-						width="350">
+					<iframe id="stream-chat" src="https://www.twitch.tv/ASMRCast/chat?popout=" scrolling="no" frameborder="0">
 					</iframe>
 				</div>
 			</div>
-			<div class="bottom"></div>
 		</div>
 	</body>
 </html>
