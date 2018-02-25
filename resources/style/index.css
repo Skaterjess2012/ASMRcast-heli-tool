@@ -31,6 +31,7 @@ body {
   width: 7em;
   height: 7em;
   background: red url('');
+  cursor: move;
 }
 .container .left .tools {
   background: #4b367c;
